@@ -1,0 +1,5 @@
+rootProject.name = 'JavaStack'
+include 'vn-commons'
+include 'vn-business'
+include 'vn-config'
+
