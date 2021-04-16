@@ -15,28 +15,39 @@ repositories {
 dependencies {
     // https://mvnrepository.com/artifact/org.springframework/spring-context
     //FIXME 为什么在plugins中不能仿写
-    implementation 'org.springframework:spring-context:5.3.5'
-    implementation 'com.nepxion:banner:1.0.2'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.2'
-    implementation 'com.baomidou:mybatis-plus:3.4.1'
-    compileOnly 'org.projectlombok:lombok:1.18.16'
+    compile 'org.springframework:spring-context:5.3.5'
+    compile 'com.nepxion:banner:1.0.2'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.12.2'
+    compile 'com.baomidou:mybatis-plus:3.4.1'
+    compile 'org.projectlombok:lombok:1.18.16'
     compile group: 'org.springframework', name: 'spring-web', version: '5.3.3'
     compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
-    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.3'
-    implementation group: 'com.alibaba', name: 'transmittable-thread-local', version: '2.12.1'
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    compile group: 'io.projectreactor', name: 'reactor-core', version: '3.4.3'
+    compile group: 'com.alibaba', name: 'transmittable-thread-local', version: '2.12.1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
 // https://mvnrepository.com/artifact/cn.hutool/hutool-core
-    implementation group: 'cn.hutool', name: 'hutool-core', version: '5.6.2'
+    compile group: 'cn.hutool', name: 'hutool-core', version: '5.6.2'
 // https://mvnrepository.com/artifact/org.springframework.security/spring-security-core
-    implementation group: 'org.springframework.security', name: 'spring-security-core', version: '5.4.5'
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.4.5'
 // https://mvnrepository.com/artifact/org.springframework.social/spring-social-security
-    implementation group: 'org.springframework.social', name: 'spring-social-security', version: '1.1.6.RELEASE'
+    compile group: 'org.springframework.social', name: 'spring-social-security', version: '1.1.6.RELEASE'
 // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-openfeign-core
-    implementation group: 'org.springframework.cloud', name: 'spring-cloud-openfeign-core', version: '3.0.1'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-openfeign-core', version: '3.0.1'
 // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.4'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.4'
+// https://mvnrepository.com/artifact/io.swagger/swagger-annotations
+    compile group: 'io.swagger', name: 'swagger-annotations', version: '1.6.2'
 
-    implementation 'org.springframework.boot:spring-boot-starter'
+    // https://mvnrepository.com/artifact/org.springframework/spring-tx
+    compile group: 'org.springframework', name: 'spring-tx', version: '5.3.5'
+
+    compile 'org.springframework.boot:spring-boot-starter'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+
+    // https://mvnrepository.com/artifact/cn.afterturn/easypoi-base
+    compile group: 'cn.afterturn', name: 'easypoi-base', version: '4.3.0'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

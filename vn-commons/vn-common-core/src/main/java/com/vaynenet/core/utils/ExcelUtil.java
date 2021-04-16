@@ -1,4 +1,3 @@
-/*
 package com.vaynenet.core.utils;
 
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
@@ -18,20 +17,18 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-*/
 /**
  * Excel工具类
  *
  * @author zlt
  * @date 2019/1/6
- *//*
+ */
 
 public class ExcelUtil {
     private ExcelUtil() {
         throw new IllegalStateException("Utility class");
     }
 
-    */
 /**
      * 导出
      *
@@ -43,7 +40,7 @@ public class ExcelUtil {
      * @param isCreateHeader 是否创建列头
      * @param response
      * @throws IOException
-     *//*
+     */
 
     public static void exportExcel(List<?> list, String title, String sheetName, Class<?> pojoClass, String fileName
             , boolean isCreateHeader, HttpServletResponse response) throws IOException {
@@ -53,7 +50,6 @@ public class ExcelUtil {
 
     }
 
-    */
 /**
      * 导出
      *
@@ -64,22 +60,21 @@ public class ExcelUtil {
      * @param fileName  文件名
      * @param response
      * @throws IOException
-     *//*
+     */
 
     public static void exportExcel(List<?> list, String title, String sheetName, Class<?> pojoClass, String fileName
             , HttpServletResponse response) throws IOException {
         defaultExport(list, pojoClass, fileName, response, new ExportParams(title, sheetName, ExcelType.XSSF));
     }
 
-    */
 /**
      * 导出
      *
      * @param list     数据列表(元素是Map)
      * @param fileName 文件名
      * @param response
-     * @throws IOException
-     *//*
+     * @throws IOException*/
+
 
     public static void exportExcel(List<Map<String, Object>> list, String fileName, HttpServletResponse response) throws IOException {
         defaultExport(list, fileName, response);
@@ -127,4 +122,3 @@ public class ExcelUtil {
         return ExcelImportUtil.importExcel(file.getInputStream(), pojoClass, params);
     }
 }
-*/
