@@ -12,6 +12,13 @@ repositories {
     mavenCentral()
 }
 
+/*sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java','../vn-config/src/main/java']
+        }
+    }
+}*/
 dependencies {
     implementation project(':vn-common-core')
     implementation project(':vn-config')
@@ -21,6 +28,8 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 
 test {
