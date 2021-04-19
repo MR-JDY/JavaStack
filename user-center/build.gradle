@@ -12,16 +12,16 @@ repositories {
     mavenCentral()
 }
 
-/*sourceSets {
-    main {
-        java {
-            srcDirs = ['src/main/java','../vn-config/src/main/java']
-        }
-    }
-}*/
+//sourceSets {
+//    main {
+//        java {
+//            srcDirs = ['src/main/java','../vn-config/src/main/java']
+//        }
+//    }
+//}
 dependencies {
-    implementation project(':vn-common-core')
-    implementation project(':vn-config')
+    compile project(':vn-common-core')
+//    compile project(':vn-config')
 
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
