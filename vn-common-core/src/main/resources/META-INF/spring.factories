@@ -1,3 +1,6 @@
 org.springframework.context.ApplicationContextInitializer=\
 com.vaynenet.core.config.BannerInitializer
 
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.vaynenet.core.feign.fallback.UserServiceFallbackFactory,\
+com.vaynenet.core.lock.LockAspect

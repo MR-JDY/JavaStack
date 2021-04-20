@@ -12,15 +12,16 @@ repositories {
     mavenCentral()
 }
 
-//sourceSets {
-//    main {
-//        java {
-//            srcDirs = ['src/main/java','../vn-config/src/main/java']
-//        }
-//    }
-//}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java','../vn-config/src/main/java']
+        }
+    }
+}
 dependencies {
     compile project(':vn-common-core')
+    //FIXME 为什么不能引用而需要上面的sourceSets?
 //    compile project(':vn-config')
 
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
@@ -30,6 +31,19 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.projectlombok:lombok:1.18.16'
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    // https://mvnrepository.com/artifact/io.springfox/springfox-core
+    implementation group: 'io.springfox', name: 'springfox-core', version: '2.9.2'
+// https://mvnrepository.com/artifact/io.springfox/springfox-spring-web
+    implementation group: 'io.springfox', name: 'springfox-spring-web', version: '2.9.2'
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+// https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter
+    implementation group: 'com.alibaba', name: 'druid-spring-boot-starter', version: '1.2.4'
+// https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter
+    implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.1.4'
+
 }
 
 test {
