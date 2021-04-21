@@ -1,4 +1,3 @@
 rootProject.name = 'JavaStack'
 //includeFlat 'vn-config'
 includeFlat 'vn-common-core'
-

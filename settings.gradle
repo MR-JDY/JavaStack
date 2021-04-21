@@ -4,4 +4,5 @@ include 'vn-config'
 include 'vn-log-starter'
 include 'vn-swagger-starter'
 include 'user-center'
+include 'vn-redis-starter'
 

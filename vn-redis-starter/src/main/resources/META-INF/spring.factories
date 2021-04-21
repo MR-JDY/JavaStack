@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.vaynenet.redis.RedisAutoConfigure,\
+com.vaynenet.redis.lock.RedissonDistributedLock,\
+com.vaynenet.redis.template.RedisRepository

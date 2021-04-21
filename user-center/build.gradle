@@ -21,6 +21,7 @@ sourceSets {
 }
 dependencies {
     compile project(':vn-common-core')
+    compile project(':vn-redis-starter')
     //FIXME 为什么不能引用而需要上面的sourceSets?
 //    compile project(':vn-config')
 

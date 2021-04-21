@@ -8,7 +8,7 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.vaynenet.user.model
+  typeAliasesPackage: com.vaynenet.core.model
   global-config:
     db-config:
       id-type: auto
@@ -20,12 +20,13 @@ vayne:
     description: 用户中心接口文档
     version: 1.0
     base-package: com.vaynenet.user.controller
-#  cache-manager:
-#    configs:
-#      - key: menu
-#        second: 300
-#      - key: user
-#        second: 1800
+
+  cache-manager:
+    configs:
+      - key: menu
+        second: 300
+      - key: user
+        second: 1800
 #  #多租户配置
 #  tenant:
 #    enable: true

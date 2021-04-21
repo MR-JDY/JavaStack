@@ -45,7 +45,7 @@ public class SysUserController {
     @Autowired
     private ISysUserService appUserService;
 
-    @Autowired
+//    @Autowired
 //    private IQueryService queryService;
 
     /**
